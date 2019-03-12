@@ -1,0 +1,28 @@
+<article class="list">
+  <div class="messageTitle">
+    <h2>Messages List</h2>
+  </div>
+
+  {{#each messages as |message|}}
+    <section class="media">
+      <div class="media-left media-top">
+        <a href="">
+          <img class="media-object" src={{message.__data.pic}} alt="userpic">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">{{message.__data.username}}</h4>
+        <span class="date">{{message.__data.date}}</span><br>
+        <span class="useragent">{{message.__data.useragent}}</span>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Message detail</h3>
+          </div>
+          <div class="panel-body">
+            {{message.__data.message}}
+          </div>
+        </div>
+      </div>
+    </section>
+  {{/each}}
+</article>
