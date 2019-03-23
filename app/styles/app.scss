@@ -1,0 +1,11 @@
+@import 'variables/color';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@import 'components/message-list';

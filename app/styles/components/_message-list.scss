@@ -1,0 +1,20 @@
+.messageTitle{
+    border-left:6px solid $border-color; 
+    background-color: $bg-color-dark;
+}
+.messageTitle h2{
+   padding-left: 15px; 
+   color: $text-color;
+}
+.list{
+    background-color: $bg-color-light2; 
+}
+.media{
+    background-color: $bg-color-light1;
+    img{
+        width: 100px;
+    }
+}
+.panel{
+    margin:10px 20px 20px;
+}
